@@ -1,0 +1,90 @@
+:host{
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.choice-point{
+  border-radius: 7px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 36px;
+
+}
+
+:host(.neutral){
+  border: 2px solid transparent;
+}
+:host(.selected){
+  border: 2px solid #A729F5;
+}
+:host(.correct){
+  border: 2px solid #26D782;
+}
+:host(.wrong){
+  border: 2px solid #EE5454;
+}
+
+:host(.neutral) .choice-point{
+  background-color: #F4F6FA;
+  color: #626C7F;
+}
+
+:host(.selected) .choice-point{
+  background-color: #A729F5;
+  color: #ffffff;
+}
+
+:host(.correct) .choice-point{
+  background-color: #26D782;
+  color: #ffffff;
+}
+
+:host(.wrong) .choice-point{
+  background-color: #EE5454;
+  color: #ffffff;
+}
+
+:host(.neutral):hover .choice-point{
+  background-color: #F6E7FF;
+  color: #A729F5;
+}
+
+:host .choice-point.HTML{
+  background-color: #FFF1E9;
+}
+:host(.neutral):hover .choice-point.HTML{
+  background-color: #FFF1E9;
+}
+
+:host .choice-point.CSS{
+  background-color: #E0FDEF;
+}
+:host(.neutral):hover .choice-point.CSS{
+  background-color: #E0FDEF;
+}
+
+:host .choice-point.JavaScript{
+  background-color: #EBF0FF;
+}
+:host(.neutral):hover .choice-point.JavaScript{
+  background-color: #EBF0FF;
+}
+
+:host .choice-point.Accessibility{
+  background-color: #F6E7FF;
+}
+:host(.neutral):hover .choice-point.Accessibility{
+  background-color: #F6E7FF;
+}

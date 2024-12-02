@@ -1,0 +1,80 @@
+:host{
+  /* border-left: 1px solid #eee; */
+  margin-top: 15px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 16px;
+  height: 66px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+.selection-warning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #EE5454;
+}
+
+.selection-warning svg{
+  margin-right: 5px;
+  transform: scale(0.7);
+}
+
+.results-container{
+  background-color: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: 390px;
+}
+
+.results-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.results-head .icon{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transform: scale(0.7);
+}
+
+.results-head .HTML{
+  background-color: #FFF1E9;
+}
+
+.results-head .CSS{
+  background-color: #E0FDEF;
+}
+
+.results-head .JavaScript{
+  background-color: #EBF0FF;
+}
+
+.results-head .Accessibility{
+  background-color: #F6E7FF;
+}
