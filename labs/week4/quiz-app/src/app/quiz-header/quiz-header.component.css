@@ -1,0 +1,70 @@
+:host{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.subject-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.subject-head .icon{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transform: scale(0.7);
+}
+
+.subject-head .HTML{
+  background-color: #FFF1E9;
+}
+
+.subject-head .CSS{
+  background-color: #E0FDEF;
+}
+
+.subject-head .JavaScript{
+  background-color: #EBF0FF;
+}
+
+.subject-head .Accessibility{
+  background-color: #F6E7FF;
+}
+
+.theming{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.switch-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 22px;
+  border-radius: 123px;
+  margin: 0 10px;
+  background-color: #A729F5;
+}
+.switch{
+  width: 18px;
+  height: 18px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  /* angular-quiz-app2 */
+}
+.switch-container.switch-on .switch{
+  transform: translateX(109%);
+}
+.switch-container.switch-off .switch{
+  transform: translateX(4%);
+}

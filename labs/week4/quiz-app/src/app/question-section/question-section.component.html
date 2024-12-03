@@ -1,0 +1,24 @@
+@if (!appStoreService.quizTypeSelected()) {
+  <h1 style="margin-bottom: 20px;">
+    <div class="heading-normal">Welcome to the</div>
+    <div>Frontend Quiz!</div>
+  </h1>
+
+  <div style="margin: 15px 0px;"><i style="font-size: 16px;">Pick a subject to get started.</i></div>
+}
+@else {
+  @if(!appStoreService.endOfQuiz()){
+    <div style="margin: 15px 0px;"><i style="font-size: 16px;">Question {{getAnsweredQustions()}} of {{getTotalQuetions()}}</i></div>
+    <h1 style="margin: 20px 0px; line-height: 120%;" class="font-medium">
+      {{getCurrentQuestion()}}
+    </h1>
+
+    <div class="progress-container"><div class="progress primary-background" [style]="getProgressBarStyle()"></div></div>
+  }
+  @else {
+    <h1 style="margin-bottom: 20px;">
+      <div class="heading-normal">Quiz completed</div>
+      <div>You scored...</div>
+    </h1>
+  }
+}
