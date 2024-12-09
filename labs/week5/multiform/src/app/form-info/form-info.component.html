@@ -1,0 +1,30 @@
+<h1>Personal info</h1>
+  <p>Please provide your name, email address, and phone number.</p>
+
+  <div>
+
+    <label>
+      <div class="name-container">
+        <span class="name">Name</span>
+        <span *ngIf="requiredInputValue===1" class="error" class="error">This fied is required</span>
+      </div>
+      <input [class]="requiredInputValue===1&&'warn'" type="text" placeholder="e.g. Stephen King" />
+    </label>
+
+    <label>
+      <div class="name-container">
+        <span class="name">Email Address</span>
+        <span *ngIf="requiredInputValue===2" class="error">This fied is required</span>
+      </div>
+      <input [class]="requiredInputValue===2&&'warn'" type="text" placeholder="e.g. stephenking@lorem.com" />
+    </label>
+
+    <label>
+      <div class="name-container">
+        <span class="name">Phone Number</span>
+        <span *ngIf="requiredInputValue===3" class="error">This fied is required</span>
+      </div>
+      <input [class]="requiredInputValue===3&&'warn'" type="tel" placeholder="e.g. +1 234 567 890" />
+    </label>
+
+  </div>

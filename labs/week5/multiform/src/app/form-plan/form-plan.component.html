@@ -1,0 +1,36 @@
+<h1>Select your plan</h1>
+<p>You have the option of monthly or yearly billing.</p>
+
+<div class="plan-card-container">
+
+  <div class="plan-card selected">
+    <div class="plan-card-image-container"> <img src="../../assets/images/icon-arcade.svg" alt="Arcade icon"/> </div>
+    <div class="plan-card-info">
+      <div class="plan-card-title">Arcade</div>
+      <div class="plan-card-price">$9/mo</div>
+    </div>
+  </div>
+
+  <div class="plan-card">
+    <div class="plan-card-image-container"> <img src="../../assets/images/icon-advanced.svg" alt="Advanced icon"/> </div>
+    <div class="plan-card-info">
+      <div class="plan-card-title">Advanced</div>
+      <div class="plan-card-price">$12/mo</div>
+    </div>
+  </div>
+
+  <div class="plan-card">
+    <div class="plan-card-image-container"> <img src="../../assets/images/icon-pro.svg" alt="Pro icon"/> </div>
+    <div class="plan-card-info">
+      <div class="plan-card-title">Pro</div>
+      <div class="plan-card-price">$15/mo</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="time-selection">
+  <div>Monthly</div>
+  <div (click)="onToggle()" class="switch-container {{yearlyPlan?'yearly-on':'yearly-off'}}"><div class="switch"></div></div>
+  <div>Yearly</div>
+</div>
